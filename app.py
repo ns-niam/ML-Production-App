@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import pandas as pd
 
-API_URL = "https://stunning-giggle-4jvg7jj9p9r4cqr9q-8000.app.github.dev/predict"
+API_URL = "https://fictional-space-umbrella-r46rg44v56pxfpx5p-8000.app.github.dev/predict"
 
 # Page config
 st.set_page_config(page_title="ML Prediction App", page_icon="🚀", layout="centered")

@@ -4,3 +4,6 @@ scikit-learn
 joblib
 pydantic
 python-multipart
+streamlit
+requests
+mlflow

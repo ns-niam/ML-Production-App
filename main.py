@@ -1,8 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 import joblib
+import numpy as np
 
-app = FastAPI(title="ML Model API", version="1.0")
+app = FastAPI(title="ML Model API", version="2.0")
 
 # Load model
 try:
@@ -17,16 +18,22 @@ class InputData(BaseModel):
 # Root endpoint
 @app.get("/")
 def root():
-    return {"message": "ML API is running successfully "}
+    return {"message": "ML API is running successfully 🚀"}
 
 # Prediction endpoint
 @app.post("/predict")
 def predict(input_data: InputData):
     try:
-        prediction = model.predict([input_data.data])
+        features = np.array(input_data.data).reshape(1, -1)
+
+        prediction = model.predict(features).tolist()
+        confidence = model.predict_proba(features).tolist()
+
         return {
             "input": input_data.data,
-            "prediction": prediction.tolist()
+            "prediction": prediction,
+            "confidence": confidence
         }
+
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

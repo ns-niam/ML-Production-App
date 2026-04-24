@@ -202,7 +202,7 @@ docker run -p 8000:8000 ml-production-app
 
 ### 🔹 Prediction Examples
 ![Setosa](screenshots/prediction-Setosa.png)
-![Versicolor](screenshots/prediction- Varscolor.png)
+![Versicolor](screenshots/prediction-Varscolor.png)
 ![Virginica](screenshots/prediction-Virginica.png)
 
 ### 🔹 MLflow Runs

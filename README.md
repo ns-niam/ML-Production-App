@@ -192,17 +192,27 @@ docker run -p 8000:8000 ml-production-app
 
 ## 📸 Screenshots
 
+## 📸 Screenshots
+
 ### 🔹 Streamlit UI
+![UI](screenshots/streamlit-ui.png)
 
-![UI](screenshots/ui.png)
+### 🔹 API Documentation
+![API Docs](screenshots/api-docs.png)
 
-### 🔹 Prediction Output
+### 🔹 Prediction Examples
+![Setosa](screenshots/prediction-Setosa.png)
+![Versicolor](screenshots/prediction-Varscolor.png)
+![Virginica](screenshots/prediction-Virginica.png)
 
-![Prediction](screenshots/predict.png)
+### 🔹 MLflow Runs
+![Runs](screenshots/mlflow-runs.png)
 
-### 🔹 MLflow Dashboard
+### 🔹 MLflow Model
+![Model](screenshots/mlflow-model.png)
 
-![MLflow](screenshots/mlflow.png)
+### 🔹 Model Registry
+![Registry](screenshots/model-registry.png)
 
 ---
 

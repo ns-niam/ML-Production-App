@@ -90,6 +90,7 @@ pip install -r requirements.txt
 
 ```
 uvicorn main:app --host 0.0.0.0 --port 8000
+python -m uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
 👉 Open:
@@ -104,6 +105,7 @@ http://localhost:8000/docs
 
 ```
 streamlit run app.py
+python -m streamlit run app.py --server.port 8501 --server.address 0.0.0.0
 ```
 
 👉 Open:
@@ -118,6 +120,7 @@ http://localhost:8501
 
 ```
 mlflow ui --port 5000
+python -m mlflow ui --host 0.0.0.0 --port 5000
 ```
 
 👉 Open:
